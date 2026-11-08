@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#162b4d">
+  <meta name="description" content="Pequenos Programadores: aprenda Scratch criando histórias, animações e jogos.">
+  <title>Pequenos Programadores | Curso Scratch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Página inicial Pequenos Programadores">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span><strong>Pequenos</strong><small>PROGRAMADORES</small></span>
+      </a>
+      <div class="side-label">SUA TRILHA</div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="inicio"><span class="nav-icon">⌂</span> Início</button>
+        <button class="nav-item" data-view="aula1"><span class="nav-icon">01</span> Aula 1 · Primeiros passos</button>
+        <button class="nav-item" data-view="aula2"><span class="nav-icon">02</span> Aula 2 · Personagem animado</button>
+        <button class="nav-item" data-view="missao"><span class="nav-icon">★</span> Grande missão</button>
+        <button class="nav-item" data-view="responsavel"><span class="nav-icon">◉</span> Guia do responsável</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-mascot" aria-hidden="true">🐱</div>
+        <p><strong>Uma ideia de cada vez.</strong><br>Programar é experimentar!</p>
+        <span class="version">MÓDULO 1 · VERSÃO 1.0</span>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumb">CURSO SCRATCH <span>/</span> <strong id="crumbCurrent">INÍCIO</strong></div>
+        <div class="top-actions">
+          <span class="device-note">Funciona no computador e tablet</span>
+          <button class="avatar" id="nameButton" title="Editar nome do programador">P</button>
+        </div>
+      </header>
+
+      <section class="view active-view" id="view-inicio">
+        <div class="hero-panel">
+          <div class="hero-copy">
+            <span class="eyebrow">ESCOLA DE PROGRAMAÇÃO CRIATIVA</span>
+            <h1>Olá, <span id="heroName">programador</span>!<br>Vamos criar algo?</h1>
+            <p>Aprenda a conversar com o computador, controlar personagens e transformar ideias em animações.</p>
+            <button class="primary-button" data-go="aula1">Começar a primeira aula <span>→</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="pixel pixel-one">✦</div><div class="pixel pixel-two">✳</div>
+            <div class="cat-card"><div class="cat-face"><span class="ear ear-left"></span><span class="ear ear-right"></span><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="nose"></span><span class="mouth"></span><span class="whisker w1"></span><span class="whisker w2"></span></div><div class="cat-tail"></div></div>
+            <div class="code-chip chip-a">quando clicar</div><div class="code-chip chip-b">mova 10 passos</div>
+          </div>
+        </div>
+
+        <div class="welcome-row">
+          <div><span class="eyebrow dark-eyebrow">SUA JORNADA</span><h2>Primeiro, o básico. Depois, a diversão.</h2></div>
+          <div class="progress-summary"><strong id="overallPercent">0%</strong><span>do módulo concluído</span></div>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="overallProgress"></div></div>
+
+        <div class="section-heading"><div><span class="eyebrow dark-eyebrow">MÓDULO 1</span><h2>Minha primeira programação</h2></div><span class="duration-pill">2 aulas · cerca de 2 horas</span></div>
+        <div class="lesson-grid">
+          <article class="lesson-card lesson-card-one">
+            <div class="card-top"><span class="number-bubble">01</span><span class="status-tag" id="status-aula1">COMEÇAR</span></div>
+            <div class="card-illustration illustration-one"><div class="mini-cat">🐱</div><div class="speech-bubble">Olá!</div></div>
+            <h3>Conhecendo o Scratch</h3>
+            <p>Descubra o que é programação, conheça a tela do Scratch e dê suas primeiras instruções.</p>
+            <div class="card-meta"><span>⏱ 60 min</span><span>4 atividades</span></div>
+            <button class="text-button" data-go="aula1">Entrar na aula <span>→</span></button>
+          </article>
+          <article class="lesson-card lesson-card-two">
+            <div class="card-top"><span class="number-bubble">02</span><span class="status-tag" id="status-aula2">BLOQUEADA</span></div>
+            <div class="card-illustration illustration-two"><div class="star-shape">✦</div><div class="mini-robot">🤖</div><div class="spark">✧</div></div>
+            <h3>Meu personagem animado</h3>
+            <p>Escolha um ator, mude seu visual e crie uma animação que responde aos seus cliques.</p>
+            <div class="card-meta"><span>⏱ 60 min</span><span>3 atividades</span></div>
+            <button class="text-button" data-go="aula2">Ver aula <span>→</span></button>
+          </article>
+          <article class="lesson-card lesson-card-three">
+            <div class="card-top"><span class="number-bubble">★</span><span class="status-tag" id="status-missao">BLOQUEADA</span></div>
+            <div class="card-illustration illustration-three"><div class="trophy">🏆</div><div class="confetti c1">✦</div><div class="confetti c2">✧</div></div>
+            <h3>Grande missão</h3>
+            <p>Reúna o que aprendeu e crie seu primeiro projeto com personagem, cenário e interação.</p>
+            <div class="card-meta"><span>⏱ 30–45 min</span><span>Projeto final</span></div>
+            <button class="text-button" data-go="missao">Ver missão <span>→</span></button>
+          </article>
+        </div>
+        <div class="tip-banner"><div class="tip-icon">💡</div><div><strong>Dica de programador</strong><p>Não tenha medo de errar. Na programação, testar, observar e corrigir faz parte da aprendizagem.</p></div></div>
+      </section>
+
+      <section class="view lesson-view" id="view-aula1">
+        <div class="lesson-header color-blue">
+          <span class="eyebrow">AULA 1 · 60 MINUTOS</span><h1>Conhecendo o mundo do Scratch</h1>
+          <p>Hoje você vai descobrir como dar instruções ao computador e fazer o gatinho falar e andar.</p>
+          <div class="lesson-header-bottom"><span>SEU OBJETIVO: CRIAR O PRIMEIRO PROGRAMA</span><span class="lesson-progress-label" id="lesson1ProgressLabel">0 de 4 etapas</span></div>
+        </div>
+        <div class="stepper" id="stepper1"><button class="step-dot current" data-step="0">1</button><span></span><button class="step-dot" data-step="1">2</button><span></span><button class="step-dot" data-step="2">3</button><span></span><button class="step-dot" data-step="3">4</button></div>
+
+        <article class="lesson-step active-step" data-step-panel="0" data-lesson="1">
+          <span class="step-kicker">ETAPA 1 · PENSE COMO PROGRAMADOR</span><h2>O computador precisa de instruções</h2>
+          <p>Imagine que você vai ensinar um robô a preparar um sanduíche. Ele não sabe o que fazer sozinho. Você precisa explicar cada passo, na ordem certa.</p>
+          <div class="example-panel"><div class="example-icon">🥪</div><div><strong>Um algoritmo para fazer um sanduíche</strong><ol><li>Pegue duas fatias de pão.</li><li>Coloque uma fatia no prato.</li><li>Coloque o queijo sobre o pão.</li><li>Cubra com a segunda fatia.</li></ol></div></div>
+          <div class="concept-note"><strong>Palavra nova: ALGORITMO</strong><p>É uma sequência organizada de passos para realizar uma tarefa ou resolver um problema.</p></div>
+          <div class="quiz-card">
+            <div class="quiz-label">DESAFIO RÁPIDO</div><h3>O robô vai escovar os dentes. Qual é a primeira coisa que ele deve fazer?</h3>
+            <div class="option-list" data-quiz="q1"><button class="quiz-option" data-answer="wrong">Colocar pasta na escova</button><button class="quiz-option" data-answer="correct">Pegar a escova de dentes</button><button class="quiz-option" data-answer="wrong">Enxaguar a boca</button></div>
+            <div class="feedback" id="feedback-q1" aria-live="polite"></div>
+          </div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="1" data-lesson="1">
+          <span class="step-kicker">ETAPA 2 · EXPLORE O AMBIENTE</span><h2>Conheça a oficina de criação</h2>
+          <p>Abra o Scratch em outra aba. Observe a tela e encontre as partes indicadas abaixo.</p>
+          <a class="external-link" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir o editor do Scratch <span>↗</span></a>
+          <div class="scratch-map">
+            <div class="map-title">AS PARTES DO SCRATCH</div>
+            <div class="map-grid">
+              <div class="map-piece stage-piece"><span class="map-number">1</span><div class="map-emoji">🎭</div><strong>Palco</strong><small>Onde a história acontece.</small></div>
+              <div class="map-piece blocks-piece"><span class="map-number">2</span><div class="map-emoji">🧩</div><strong>Blocos</strong><small>As instruções coloridas.</small></div>
+              <div class="map-piece code-piece"><span class="map-number">3</span><div class="map-emoji">🛠️</div><strong>Área de código</strong><small>Onde montamos o programa.</small></div>
+              <div class="map-piece sprite-piece"><span class="map-number">4</span><div class="map-emoji">🐱</div><strong>Lista de atores</strong><small>Os personagens do projeto.</small></div>
+            </div>
+            <div class="map-footnote">O editor pode ter pequenas diferenças dependendo do tamanho da tela e do dispositivo.</div>
+          </div>
+          <div class="quiz-card"><div class="quiz-label">CONFIRA SE VOCÊ ENCONTROU</div><h3>Em qual parte do Scratch os personagens aparecem?</h3><div class="option-list" data-quiz="q2"><button class="quiz-option" data-answer="wrong">Na área de código</button><button class="quiz-option" data-answer="correct">No palco</button><button class="quiz-option" data-answer="wrong">Na lista de blocos</button></div><div class="feedback" id="feedback-q2" aria-live="polite"></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="2" data-lesson="1">
+          <span class="step-kicker">ETAPA 3 · MONTE SEU PRIMEIRO CÓDIGO</span><h2>Faça o gatinho dar boas-vindas</h2>
+          <p>Agora vamos encaixar dois blocos. Primeiro, o programa espera o início. Depois, o gatinho fala.</p>
+          <div class="code-explainer">
+            <div class="block-event"><span class="block-symbol">⚑</span> quando a bandeira verde for clicada</div>
+            <div class="block-say">diga <b>Olá, programador!</b> por <b>2</b> segundos</div>
+          </div>
+          <ol class="instruction-list"><li>Na categoria <b>Eventos</b>, encontre o bloco “quando a bandeira verde for clicada”.</li><li>Na categoria <b>Aparência</b>, encontre o bloco “diga Olá! por 2 segundos”.</li><li>Arraste o segundo bloco para baixo do primeiro, até encaixá-los.</li><li>Clique na bandeira verde acima do palco.</li></ol>
+          <div class="concept-note"><strong>Por que os blocos se encaixam?</strong><p>O encaixe mostra que as instruções fazem parte da mesma sequência. O computador executa uma depois da outra.</p></div>
+          <div class="quiz-card"><div class="quiz-label">TESTE SEU CONHECIMENTO</div><h3>Qual bloco indica quando o programa deve começar?</h3><div class="option-list" data-quiz="q3"><button class="quiz-option" data-answer="wrong">Mova 10 passos</button><button class="quiz-option" data-answer="wrong">Diga Olá!</button><button class="quiz-option" data-answer="correct">Quando a bandeira verde for clicada</button></div><div class="feedback" id="feedback-q3" aria-live="polite"></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="3" data-lesson="1">
+          <span class="step-kicker">ETAPA 4 · EXPERIMENTE E DESCUBRA</span><h2>Faça o personagem se movimentar</h2>
+          <p>Vamos acrescentar uma instrução para o gatinho andar. Procure o bloco na categoria <b>Movimento</b>.</p>
+          <div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-say">diga <b>Olá!</b> por <b>2</b> segundos</div><div class="block-motion">mova <b>10</b> passos</div></div>
+          <div class="experiment-grid"><div class="experiment"><span>EXPERIMENTO A</span><strong>10 passos</strong><p>O personagem anda um pouquinho.</p></div><div class="experiment"><span>EXPERIMENTO B</span><strong>50 passos</strong><p>O personagem anda mais longe.</p></div><div class="experiment"><span>EXPERIMENTO C</span><strong>100 passos</strong><p>Observe quanto ele consegue andar.</p></div></div>
+          <div class="quiz-card"><div class="quiz-label">PENSE SOBRE O TESTE</div><h3>O que acontece quando você aumenta o número de passos?</h3><div class="option-list" data-quiz="q4"><button class="quiz-option" data-answer="wrong">O personagem fala mais alto</button><button class="quiz-option" data-answer="correct">O personagem se movimenta mais</button><button class="quiz-option" data-answer="wrong">O cenário muda de cor</button></div><div class="feedback" id="feedback-q4" aria-live="polite"></div></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Mini missão: personalize seu personagem</strong><p>Troque a mensagem “Olá!” por uma frase inventada por você. Depois, faça o personagem andar 50 passos e girar 15 graus.</p><label class="check-row"><input type="checkbox" data-task="l1mini"> Consegui personalizar e testar meu personagem.</label></div></div>
+        </article>
+
+        <div class="lesson-footer"><button class="secondary-button" id="lesson1Prev" disabled>← Voltar</button><span id="lesson1StepText">Etapa 1 de 4</span><button class="primary-button" id="lesson1Next">Próxima etapa →</button></div>
+      </section>
+
+      <section class="view lesson-view" id="view-aula2">
+        <div class="lesson-header color-purple"><span class="eyebrow">AULA 2 · 60 MINUTOS</span><h1>Meu personagem animado</h1><p>Escolha atores, cenários e fantasias. Depois, faça seu personagem responder quando alguém clicar nele.</p><div class="lesson-header-bottom"><span>SEU OBJETIVO: CRIAR UMA ANIMAÇÃO INTERATIVA</span><span class="lesson-progress-label" id="lesson2ProgressLabel">0 de 3 etapas</span></div></div>
+        <div class="stepper" id="stepper2"><button class="step-dot current" data-step="0">1</button><span></span><button class="step-dot" data-step="1">2</button><span></span><button class="step-dot" data-step="2">3</button></div>
+        <article class="lesson-step active-step" data-step-panel="0" data-lesson="2"><span class="step-kicker">ETAPA 1 · ESCOLHA SEU ELENCO</span><h2>Personagens e cenários</h2><p>No Scratch, os personagens são chamados de <b>atores</b> ou <b>sprites</b>. O cenário é o lugar onde sua história acontece.</p><div class="choice-cards"><div><div class="choice-emoji">🦊</div><strong>Escolha um ator</strong><p>Abra a biblioteca de atores e escolha alguém para sua história.</p></div><div><div class="choice-emoji">🌳</div><strong>Escolha um cenário</strong><p>Adicione um lugar que combine com seu personagem.</p></div></div><a class="external-link" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir o Scratch para escolher <span>↗</span></a><div class="reflection-box"><strong>Planeje sua história</strong><label>Nome do personagem<input type="text" id="characterName" placeholder="Ex.: Raposa Lila"></label><label>Onde acontece a história?<input type="text" id="storyPlace" placeholder="Ex.: Uma floresta misteriosa"></label><label>Qual é a missão dele?<textarea id="storyMission" rows="2" placeholder="Ex.: Encontrar uma estrela perdida..."></textarea></label></div></article>
+        <article class="lesson-step" data-step-panel="1" data-lesson="2"><span class="step-kicker">ETAPA 2 · DÊ VIDA AO PERSONAGEM</span><h2>Descubra as fantasias</h2><p>Um mesmo ator pode ter várias aparências. No Scratch, cada aparência é chamada de <b>fantasia</b>. Trocar de fantasia pode criar a impressão de movimento.</p><div class="costume-demo"><div class="costume-person">🐱</div><div class="costume-arrow">→</div><div class="costume-person costume-alt">😺</div><div class="costume-arrow">→</div><div class="costume-person costume-alt2">😸</div></div><p class="small-muted">Exemplo ilustrativo: personagens com aparências diferentes.</p><ol class="instruction-list"><li>Clique no ator escolhido.</li><li>Abra a aba <b>Fantasias</b>.</li><li>Observe as aparências disponíveis. Alguns atores têm apenas uma.</li><li>Volte à aba Código e procure <b>próxima fantasia</b> em Aparência.</li><li>Encaixe esse bloco em uma sequência e teste.</li></ol><div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-say">diga <b>Vamos começar!</b> por <b>2</b> segundos</div><div class="block-look">próxima fantasia</div><div class="block-motion">mova <b>30</b> passos</div></div><div class="mission-box"><span class="mission-star">★</span><div><strong>Experimente</strong><p>Se seu ator tiver duas ou mais fantasias, teste o bloco “próxima fantasia”. Se tiver apenas uma, escolha outro ator para comparar.</p><label class="check-row"><input type="checkbox" data-task="l2costume"> Explorei as fantasias de pelo menos um ator.</label></div></div></article>
+        <article class="lesson-step" data-step-panel="2" data-lesson="2"><span class="step-kicker">ETAPA 3 · CRIE UMA INTERAÇÃO</span><h2>Faça o personagem responder ao clique</h2><p>Um evento é algo que acontece e pode iniciar uma ação. Por exemplo: clicar na bandeira verde ou clicar diretamente em um personagem.</p><div class="code-explainer"><div class="block-event">quando <b>este ator</b> for clicado</div><div class="block-say">diga <b>Você me encontrou!</b> por <b>2</b> segundos</div></div><ol class="instruction-list"><li>Selecione seu personagem.</li><li>Em Eventos, procure “quando este ator for clicado”.</li><li>Em Aparência, escolha um bloco “diga ... por ... segundos”.</li><li>Encaixe os dois blocos.</li><li>Inicie o projeto e clique ou toque no personagem.</li></ol><div class="quiz-card"><div class="quiz-label">CONFIRA</div><h3>O que é um evento no Scratch?</h3><div class="option-list" data-quiz="q5"><button class="quiz-option" data-answer="wrong">Um desenho do personagem</button><button class="quiz-option" data-answer="correct">Um acontecimento que inicia uma ação</button><button class="quiz-option" data-answer="wrong">Um tipo de cenário</button></div><div class="feedback" id="feedback-q5" aria-live="polite"></div></div><div class="mission-box"><span class="mission-star">★</span><div><strong>Mini missão: faça uma surpresa</strong><p>Crie uma mensagem especial que só aparece quando alguém clica no seu personagem.</p><label class="check-row"><input type="checkbox" data-task="l2click"> Meu personagem responde ao clique.</label></div></div></article>
+        <div class="lesson-footer"><button class="secondary-button" id="lesson2Prev" disabled>← Voltar</button><span id="lesson2StepText">Etapa 1 de 3</span><button class="primary-button" id="lesson2Next">Próxima etapa →</button></div>
+      </section>
+
+      <section class="view" id="view-missao">
+        <div class="lesson-header color-gold"><span class="eyebrow">PROJETO DE ENCERRAMENTO</span><h1>Meu primeiro mundo no Scratch</h1><p>Chegou a hora de juntar as ideias e criar um projeto com a sua assinatura.</p><div class="lesson-header-bottom"><span>MISSÃO FINAL DO MÓDULO 1</span><span>30–45 MIN</span></div></div>
+        <div class="mission-intro"><div class="mission-trophy">🏆</div><div><h2>Você aceita o desafio?</h2><p>Crie uma pequena apresentação ou história interativa. Não precisa ficar igual ao exemplo: o projeto é seu!</p></div></div>
+        <div class="project-requirements"><h3>Seu projeto precisa ter:</h3><label class="check-row"><input type="checkbox" data-task="finalActor"> Pelo menos um personagem (ator).</label><label class="check-row"><input type="checkbox" data-task="finalBackdrop"> Um cenário escolhido por você.</label><label class="check-row"><input type="checkbox" data-task="finalMove"> Um comando de movimento.</label><label class="check-row"><input type="checkbox" data-task="finalSay"> Uma mensagem falada pelo personagem.</label><label class="check-row"><input type="checkbox" data-task="finalCostume"> Uma troca de fantasia, se o ator tiver outra disponível.</label><label class="check-row"><input type="checkbox" data-task="finalInteraction"> Uma interação iniciada por clique ou toque.</label></div>
+        <div class="project-template"><div class="quiz-label">IDEIA PARA COMEÇAR</div><h3>Uma pequena aventura</h3><div class="template-sequence"><span>1</span><p>O personagem aparece e diz: “Olá! Bem-vindo ao meu mundo!”</p></div><div class="template-sequence"><span>2</span><p>O personagem se movimenta e muda de aparência.</p></div><div class="template-sequence"><span>3</span><p>Quando alguém clica nele, revela uma surpresa.</p></div><p class="small-muted">Use a ideia como inspiração. Você pode inventar outro tema e outras falas.</p></div>
+        <div class="final-submit"><label>Nome do seu projeto<input id="projectTitle" type="text" placeholder="Ex.: A aventura do gato astronauta"></label><label>Conte o que você criou<textarea id="projectDescription" rows="3" placeholder="Meu personagem é... Ele vive em... Quando clicamos nele..."></textarea></label><a class="primary-button link-button" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir Scratch e criar meu projeto ↗</a><button class="primary-button" id="finishModule">Concluir o Módulo 1</button><div class="feedback" id="finalFeedback" aria-live="polite"></div></div>
+        <div class="certificate hidden" id="certificate"><div class="certificate-stars">✦ ✧ ✦</div><span>CONQUISTA DESBLOQUEADA</span><h2>Programador iniciante!</h2><p>Você completou o primeiro módulo de Pequenos Programadores.</p><strong id="certificateName">Pequeno Programador</strong><div class="certificate-bottom">MÓDULO 1 · MINHA PRIMEIRA PROGRAMAÇÃO</div></div>
+      </section>
+
+      <section class="view" id="view-responsavel">
+        <div class="lesson-header color-dark"><span class="eyebrow">ÁREA DE ACOMPANHAMENTO</span><h1>Guia do responsável</h1><p>Orientações para acompanhar a aprendizagem sem tirar da criança a oportunidade de descobrir.</p></div>
+        <div class="parent-grid"><div class="parent-card"><span class="parent-icon">🎯</span><h3>O que observar</h3><p>Se a criança compreende a sequência dos comandos, identifica os eventos e consegue explicar o que o programa faz.</p></div><div class="parent-card"><span class="parent-icon">🧭</span><h3>Como ajudar</h3><p>Faça perguntas em vez de resolver: “O que você esperava que acontecesse?” e “Qual bloco poderia fazer isso?”.</p></div><div class="parent-card"><span class="parent-icon">🧪</span><h3>Valorize os testes</h3><p>Errar, observar e corrigir faz parte da programação. Não avalie apenas se o projeto ficou bonito.</p></div></div>
+        <div class="parent-section"><h2>Organização das duas aulas</h2><div class="schedule-row"><strong>Aula 1</strong><span>Algoritmos, ambiente Scratch, sequência, fala e movimento.</span><b>60 min</b></div><div class="schedule-row"><strong>Aula 2</strong><span>Atores, cenários, fantasias e eventos de clique.</span><b>60 min</b></div><div class="schedule-row"><strong>Projeto final</strong><span>Aplicação dos conceitos em uma criação própria.</span><b>30–45 min</b></div></div>
+        <div class="parent-section"><h2>Conceitos trabalhados</h2><div class="concept-pills"><span>Algoritmo</span><span>Sequência</span><span>Evento</span><span>Ator / sprite</span><span>Palco</span><span>Fantasia</span><span>Script</span><span>Depuração</span></div></div>
+        <div class="parent-section"><h2>Adaptação aos dispositivos</h2><p><b>Computador:</b> recomendado para arrastar os blocos com mouse e ter uma área de trabalho ampla.</p><p><b>Tablet:</b> usar preferencialmente na horizontal. Os blocos podem ser arrastados pelo toque. A atividade de clique no ator também funciona com toque na tela. Atividades que dependem de teclas do teclado serão introduzidas mais adiante, com alternativas.</p></div>
+        <div class="parent-section"><h2>Progresso registrado neste navegador</h2><p>O progresso é salvo automaticamente no dispositivo e navegador utilizados. Nesta versão inicial, ele não é sincronizado entre computador e tablet.</p><button class="secondary-button" id="resetProgress">Reiniciar progresso deste dispositivo</button><div class="feedback" id="resetFeedback" aria-live="polite"></div></div>
+      </section>
+
+      <footer class="footer"><span>PEQUENOS PROGRAMADORES</span><span>Aprender criando · Módulo 1</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
