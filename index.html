@@ -21,12 +21,15 @@
         <button class="nav-item" data-view="aula1"><span class="nav-icon">01</span> Aula 1 · Primeiros passos</button>
         <button class="nav-item" data-view="aula2"><span class="nav-icon">02</span> Aula 2 · Personagem animado</button>
         <button class="nav-item" data-view="missao"><span class="nav-icon">★</span> Grande missão</button>
+        <button class="nav-item" data-view="aula3"><span class="nav-icon">03</span> Aula 3 · Repetição</button>
+        <button class="nav-item" data-view="aula4"><span class="nav-icon">04</span> Aula 4 · Animação contínua</button>
+        <button class="nav-item" data-view="missao2"><span class="nav-icon">★</span> Projeto do Módulo 2</button>
         <button class="nav-item" data-view="responsavel"><span class="nav-icon">◉</span> Guia do responsável</button>
       </nav>
       <div class="sidebar-bottom">
         <div class="mini-mascot" aria-hidden="true">🐱</div>
         <p><strong>Uma ideia de cada vez.</strong><br>Programar é experimentar!</p>
-        <span class="version">MÓDULO 1 · VERSÃO 1.0</span>
+        <span class="version">MÓDULOS 1 E 2 · VERSÃO 1.1</span>
       </div>
     </aside>
 
@@ -58,7 +61,7 @@
 
         <div class="welcome-row">
           <div><span class="eyebrow dark-eyebrow">SUA JORNADA</span><h2>Primeiro, o básico. Depois, a diversão.</h2></div>
-          <div class="progress-summary"><strong id="overallPercent">0%</strong><span>do módulo concluído</span></div>
+          <div class="progress-summary"><strong id="overallPercent">0%</strong><span>das atividades disponíveis</span></div>
         </div>
         <div class="progress-track"><div class="progress-fill" id="overallProgress"></div></div>
 
@@ -87,6 +90,34 @@
             <p>Reúna o que aprendeu e crie seu primeiro projeto com personagem, cenário e interação.</p>
             <div class="card-meta"><span>⏱ 30–45 min</span><span>Projeto final</span></div>
             <button class="text-button" data-go="missao">Ver missão <span>→</span></button>
+          </article>
+        </div>
+        <div class="section-heading module-two-heading"><div><span class="eyebrow dark-eyebrow">MÓDULO 2</span><h2>Movimento, repetição e animações</h2></div><span class="duration-pill">2 aulas + projeto · cerca de 2h30</span></div>
+        <p class="module-intro">Agora que você já sabe dar comandos, vai aprender a repetir instruções e criar personagens que se movimentam continuamente.</p>
+        <div class="lesson-grid module-two-grid">
+          <article class="lesson-card lesson-card-four">
+            <div class="card-top"><span class="number-bubble">03</span><span class="status-tag" id="status-aula3">BLOQUEADA</span></div>
+            <div class="card-illustration illustration-four"><div class="loop-symbol">↻</div><div class="loop-chip">REPITA 10</div></div>
+            <h3>Faça o personagem repetir</h3>
+            <p>Descubra como um único bloco pode repetir uma sequência de comandos várias vezes.</p>
+            <div class="card-meta"><span>⏱ 60 min</span><span>4 etapas</span></div>
+            <button class="text-button" data-go="aula3">Entrar na aula <span>→</span></button>
+          </article>
+          <article class="lesson-card lesson-card-five">
+            <div class="card-top"><span class="number-bubble">04</span><span class="status-tag" id="status-aula4">BLOQUEADA</span></div>
+            <div class="card-illustration illustration-five"><div class="dance-emoji">💃</div><div class="dance-spark">✦</div></div>
+            <h3>Animação sem parar</h3>
+            <p>Use o bloco “sempre” e descubra como criar uma animação contínua com fantasias e pausas.</p>
+            <div class="card-meta"><span>⏱ 60 min</span><span>3 etapas</span></div>
+            <button class="text-button" data-go="aula4">Ver aula <span>→</span></button>
+          </article>
+          <article class="lesson-card lesson-card-six">
+            <div class="card-top"><span class="number-bubble">★</span><span class="status-tag" id="status-missao2">BLOQUEADA</span></div>
+            <div class="card-illustration illustration-six"><div class="trophy">🏆</div><div class="loop-mini">↻</div></div>
+            <h3>O personagem dançarino</h3>
+            <p>Crie uma animação com movimentos repetidos, troca de fantasias e ritmo escolhido por você.</p>
+            <div class="card-meta"><span>⏱ 30–45 min</span><span>Projeto final</span></div>
+            <button class="text-button" data-go="missao2">Ver projeto <span>→</span></button>
           </article>
         </div>
         <div class="tip-banner"><div class="tip-icon">💡</div><div><strong>Dica de programador</strong><p>Não tenha medo de errar. Na programação, testar, observar e corrigir faz parte da aprendizagem.</p></div></div>
@@ -171,16 +202,105 @@
         <div class="certificate hidden" id="certificate"><div class="certificate-stars">✦ ✧ ✦</div><span>CONQUISTA DESBLOQUEADA</span><h2>Programador iniciante!</h2><p>Você completou o primeiro módulo de Pequenos Programadores.</p><strong id="certificateName">Pequeno Programador</strong><div class="certificate-bottom">MÓDULO 1 · MINHA PRIMEIRA PROGRAMAÇÃO</div></div>
       </section>
 
+      <section class="view lesson-view" id="view-aula3">
+        <div class="lesson-header color-teal"><span class="eyebrow">AULA 3 · 60 MINUTOS</span><h1>Faça o personagem repetir</h1><p>Hoje você vai descobrir como ensinar o computador a repetir uma ação sem precisar encaixar o mesmo bloco várias vezes.</p><div class="lesson-header-bottom"><span>SEU OBJETIVO: USAR O BLOCO REPITA</span><span class="lesson-progress-label" id="lesson3ProgressLabel">0 de 4 itens</span></div></div>
+        <div class="stepper" id="stepper3"><button class="step-dot current" data-step="0">1</button><span></span><button class="step-dot" data-step="1">2</button><span></span><button class="step-dot" data-step="2">3</button><span></span><button class="step-dot" data-step="3">4</button></div>
+
+        <article class="lesson-step active-step" data-step-panel="0" data-lesson="3">
+          <span class="step-kicker">ETAPA 1 · UMA IDEIA INTELIGENTE</span><h2>Você não precisa repetir tudo manualmente</h2>
+          <p>Imagine que você quer que um personagem dê dez passos. Uma possibilidade seria encaixar o bloco “mova 10 passos” dez vezes. Mas isso daria trabalho!</p>
+          <div class="example-panel"><div class="example-icon">🔁</div><div><strong>Uma instrução que se repete</strong><p>Em vez de escrever o mesmo comando muitas vezes, podemos pedir ao Scratch para repetir uma sequência.</p></div></div>
+          <div class="concept-note"><strong>PALAVRA NOVA: LAÇO DE REPETIÇÃO</strong><p>É uma estrutura que manda o computador executar um ou mais comandos várias vezes. No Scratch, vamos começar com o bloco <b>repita</b>.</p></div>
+          <div class="code-explainer"><div class="block-control">repita <b>10</b> vezes</div><div class="loop-inside"><div class="block-motion">mova <b>10</b> passos</div></div><div class="code-caption">O bloco de movimento fica dentro do bloco de repetição.</div></div>
+          <div class="quiz-card"><div class="quiz-label">DESAFIO RÁPIDO</div><h3>Para que serve o bloco “repita 10”?</h3><div class="option-list" data-quiz="q6"><button class="quiz-option" data-answer="wrong">Para apagar os outros blocos.</button><button class="quiz-option" data-answer="correct">Para executar os comandos que estão dentro dele dez vezes.</button><button class="quiz-option" data-answer="wrong">Para fazer o personagem falar dez palavras.</button></div><div class="feedback" id="feedback-q6" aria-live="polite"></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="1" data-lesson="3">
+          <span class="step-kicker">ETAPA 2 · MÃOS À OBRA</span><h2>Faça o personagem caminhar dez vezes</h2>
+          <p>Abra o Scratch e escolha um personagem. Vamos colocar um bloco de repetição para controlar o movimento.</p>
+          <a class="external-link" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir o editor do Scratch <span>↗</span></a>
+          <ol class="instruction-list"><li>Selecione o personagem que você quer movimentar.</li><li>Na categoria <b>Eventos</b>, arraste “quando a bandeira verde for clicada”.</li><li>Na categoria <b>Controle</b>, procure “repita 10” e encaixe abaixo do evento.</li><li>Na categoria <b>Movimento</b>, coloque “mova 10 passos” dentro do espaço do bloco repita.</li><li>Clique na bandeira verde e observe o personagem.</li></ol>
+          <div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-control">repita <b>10</b> vezes</div><div class="loop-inside"><div class="block-motion">mova <b>10</b> passos</div></div></div>
+          <div class="experiment-grid"><div class="experiment"><span>TESTE 1</span><strong>Repita 5</strong><p>O personagem dá cinco passos de 10 unidades.</p></div><div class="experiment"><span>TESTE 2</span><strong>Repita 10</strong><p>Agora ele dá dez passos de 10 unidades.</p></div><div class="experiment"><span>TESTE 3</span><strong>Repita 20</strong><p>Observe quanto o deslocamento aumentou.</p></div></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Registre sua experiência</strong><p>Altere o número de repetições e observe a diferença. Depois, marque a atividade.</p><label class="check-row"><input type="checkbox" data-task="m2repeat"> Consegui usar o bloco repita para movimentar meu personagem.</label></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="2" data-lesson="3">
+          <span class="step-kicker">ETAPA 3 · UM CAMINHO QUADRADO</span><h2>Faça o personagem desenhar um quadrado</h2>
+          <p>Agora vamos combinar dois comandos dentro do mesmo bloco de repetição. O personagem vai andar e virar. Repetindo isso quatro vezes, ele fará um caminho parecido com um quadrado.</p>
+          <div class="example-panel"><div class="example-icon">◻️</div><div><strong>O segredo está na sequência</strong><ol><li>Andar 60 passos.</li><li>Girar 90 graus.</li><li>Repetir essas duas ações quatro vezes.</li></ol></div></div>
+          <div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-control">repita <b>4</b> vezes</div><div class="loop-inside"><div class="block-motion">mova <b>60</b> passos</div><div class="block-motion">gire ↻ <b>90</b> graus</div></div></div>
+          <ol class="instruction-list"><li>Crie a estrutura acima no Scratch.</li><li>Coloque os dois comandos dentro do bloco repita.</li><li>Execute e observe o caminho.</li><li>Se o personagem sair do palco, reduza 60 para 40 passos.</li></ol>
+          <div class="quiz-card"><div class="quiz-label">PENSE ANTES DE RESPONDER</div><h3>Por que usamos “repita 4” para desenhar os quatro lados?</h3><div class="option-list" data-quiz="q7"><button class="quiz-option" data-answer="correct">Porque a sequência “andar e girar” precisa acontecer quatro vezes.</button><button class="quiz-option" data-answer="wrong">Porque o personagem só consegue andar quatro passos.</button><button class="quiz-option" data-answer="wrong">Porque o bloco repita serve apenas para desenhar quadrados.</button></div><div class="feedback" id="feedback-q7" aria-live="polite"></div></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Mini missão: construa o quadrado</strong><p>Monte a sequência e execute o programa. Você pode experimentar lados maiores ou menores.</p><label class="check-row"><input type="checkbox" data-task="m2square"> Meu personagem percorreu um caminho com quatro lados.</label></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="3" data-lesson="3">
+          <span class="step-kicker">ETAPA 4 · INVESTIGUE</span><h2>O que acontece quando mudamos os números?</h2>
+          <p>Programadores fazem experiências para entender como os comandos funcionam. Agora é sua vez de investigar!</p>
+          <div class="experiment-grid"><div class="experiment"><span>EXPERIMENTO A</span><strong>Repita 3</strong><p>Quantas vezes o personagem executa a sequência?</p></div><div class="experiment"><span>EXPERIMENTO B</span><strong>Gire 120°</strong><p>O que muda se você usar 120 graus no lugar de 90?</p></div><div class="experiment"><span>EXPERIMENTO C</span><strong>Mova 30</strong><p>O caminho fica maior ou menor?</p></div></div>
+          <div class="concept-note"><strong>LEMBRE-SE</strong><p>O bloco repita é finito: ele executa os comandos dentro dele a quantidade de vezes indicada e depois termina.</p></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Desafio livre</strong><p>Crie outro desenho ou movimento usando repita. Não precisa ser um quadrado: invente uma forma.</p></div></div>
+          <p class="small-muted">Quando concluir as atividades e os desafios desta aula, use “Concluir aula” para avançar.</p>
+        </article>
+
+        <div class="lesson-footer"><button class="secondary-button" id="lesson3Prev" disabled>← Voltar</button><span id="lesson3StepText">Etapa 1 de 4</span><button class="primary-button" id="lesson3Next">Próxima etapa →</button></div>
+      </section>
+
+      <section class="view lesson-view" id="view-aula4">
+        <div class="lesson-header color-purple"><span class="eyebrow">AULA 4 · 60 MINUTOS</span><h1>Animação sem parar</h1><p>Hoje você vai aprender a repetir comandos continuamente e dar ritmo à animação do seu personagem.</p><div class="lesson-header-bottom"><span>SEU OBJETIVO: USAR O BLOCO SEMPRE</span><span class="lesson-progress-label" id="lesson4ProgressLabel">0 de 3 itens</span></div></div>
+        <div class="stepper" id="stepper4"><button class="step-dot current" data-step="0">1</button><span></span><button class="step-dot" data-step="1">2</button><span></span><button class="step-dot" data-step="2">3</button></div>
+
+        <article class="lesson-step active-step" data-step-panel="0" data-lesson="4">
+          <span class="step-kicker">ETAPA 1 · REPETIR PARA SEMPRE?</span><h2>Conheça o bloco “sempre”</h2>
+          <p>Na aula anterior, usamos o bloco “repita” para executar uma sequência um número determinado de vezes. Mas e se quisermos que um personagem continue dançando até alguém parar o programa?</p>
+          <div class="concept-note"><strong>PALAVRA NOVA: LAÇO INFINITO</strong><p>É uma repetição que continua executando os comandos enquanto o programa estiver funcionando. No Scratch, usamos o bloco <b>sempre</b>.</p></div>
+          <div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-forever"><div class="forever-label">sempre</div><div class="block-inside"><div class="block-look">próxima fantasia</div><div class="block-wait">espere <b>0,2</b> segundo</div></div></div></div>
+          <div class="quiz-card"><div class="quiz-label">CONFIRA</div><h3>Qual é a diferença entre “repita 5” e “sempre”?</h3><div class="option-list" data-quiz="q8"><button class="quiz-option" data-answer="wrong">Os dois blocos executam exatamente cinco vezes.</button><button class="quiz-option" data-answer="correct">“Repita 5” termina depois de cinco vezes; “sempre” continua até o programa ser interrompido.</button><button class="quiz-option" data-answer="wrong">“Sempre” só funciona quando clicamos no personagem.</button></div><div class="feedback" id="feedback-q8" aria-live="polite"></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="1" data-lesson="4">
+          <span class="step-kicker">ETAPA 2 · CRIE UMA ANIMAÇÃO</span><h2>Faça seu personagem dançar</h2>
+          <p>Vamos alternar as fantasias do personagem várias vezes. A pausa entre as trocas ajuda nossos olhos a perceberem o movimento.</p>
+          <a class="external-link" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir o editor do Scratch <span>↗</span></a>
+          <ol class="instruction-list"><li>Escolha um ator com pelo menos duas fantasias. Na aba Fantasias, confira se ele tem mais de uma aparência.</li><li>Na categoria Eventos, encaixe “quando a bandeira verde for clicada”.</li><li>Na categoria Controle, encaixe o bloco “sempre”.</li><li>Dentro dele, coloque “próxima fantasia”, da categoria Aparência.</li><li>Abaixo, ainda dentro do sempre, coloque “espere 0,2 segundo”.</li><li>Clique na bandeira verde e observe. Para parar, clique no botão vermelho de parar.</li></ol>
+          <div class="costume-demo"><div class="costume-person">🐱</div><div class="costume-arrow">↔</div><div class="costume-person costume-alt">😺</div><div class="costume-arrow">↔</div><div class="costume-person costume-alt2">😸</div></div>
+          <div class="code-explainer"><div class="block-event">⚑ quando a bandeira verde for clicada</div><div class="block-forever"><div class="forever-label">sempre</div><div class="block-inside"><div class="block-look">próxima fantasia</div><div class="block-wait">espere <b>0,2</b> segundo</div></div></div></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Mini missão: anime o personagem</strong><p>Faça as fantasias se alternarem continuamente. Depois, pare o programa usando o botão vermelho.</p><label class="check-row"><input type="checkbox" data-task="m2animation"> Meu personagem alterna as fantasias continuamente.</label></div></div>
+        </article>
+
+        <article class="lesson-step" data-step-panel="2" data-lesson="4">
+          <span class="step-kicker">ETAPA 3 · DÊ RITMO AO MOVIMENTO</span><h2>Uma pausa pode mudar tudo!</h2>
+          <p>O bloco “espere” controla o tempo entre uma ação e outra. Experimente valores diferentes e observe a velocidade da animação.</p>
+          <div class="experiment-grid"><div class="experiment"><span>RÁPIDO</span><strong>0,1 segundo</strong><p>As fantasias trocam rapidamente.</p></div><div class="experiment"><span>MODERADO</span><strong>0,5 segundo</strong><p>O movimento fica mais fácil de acompanhar.</p></div><div class="experiment"><span>DEVAGAR</span><strong>1 segundo</strong><p>Você percebe cada troca com mais tempo.</p></div></div>
+          <ol class="instruction-list"><li>Altere o número do bloco “espere”.</li><li>Execute a animação com 0,1 segundo.</li><li>Depois, teste 0,5 segundo e 1 segundo.</li><li>Escolha o ritmo que combina com seu personagem.</li></ol>
+          <div class="concept-note"><strong>ATENÇÃO AO BLOCO SEMPRE</strong><p>Como ele não termina sozinho, use o botão vermelho para interromper o programa. Isso é esperado: não é um erro!</p></div>
+          <div class="mission-box"><span class="mission-star">★</span><div><strong>Mini missão: escolha o ritmo</strong><p>Teste pelo menos dois tempos e escolha seu favorito.</p><label class="check-row"><input type="checkbox" data-task="m2forever"> Usei o bloco sempre e sei como interromper o programa.</label></div></div>
+        </article>
+        <div class="lesson-footer"><button class="secondary-button" id="lesson4Prev" disabled>← Voltar</button><span id="lesson4StepText">Etapa 1 de 3</span><button class="primary-button" id="lesson4Next">Próxima etapa →</button></div>
+      </section>
+
+      <section class="view" id="view-missao2">
+        <div class="lesson-header color-gold"><span class="eyebrow">PROJETO DE ENCERRAMENTO · MÓDULO 2</span><h1>O personagem dançarino</h1><p>Agora você vai combinar repetição, movimento, fantasias e tempo em uma criação sua.</p><div class="lesson-header-bottom"><span>MISSÃO FINAL DO MÓDULO 2</span><span>30–45 MIN</span></div></div>
+        <div class="mission-intro"><div class="mission-trophy">🕺</div><div><h2>Prepare o palco!</h2><p>Crie uma animação em que seu personagem tenha movimentos repetidos e uma dança que continua até você parar o programa.</p></div></div>
+        <div class="project-requirements"><h3>Seu projeto precisa ter:</h3><label class="check-row"><input type="checkbox" data-task="m2finalRepeat"> Um bloco repita para executar uma sequência de movimentos.</label><label class="check-row"><input type="checkbox" data-task="m2finalForever"> Um bloco sempre para manter uma ação acontecendo.</label><label class="check-row"><input type="checkbox" data-task="m2finalWait"> Um bloco espere para controlar o ritmo.</label><label class="check-row"><input type="checkbox" data-task="m2finalCustomize"> Uma mudança criada por mim (personagem, cenário, movimento ou velocidade).</label></div>
+        <div class="project-template"><div class="quiz-label">IDEIA PARA COMEÇAR</div><h3>Uma dança em duas partes</h3><div class="template-sequence"><span>1</span><p>Quando a bandeira verde for clicada, o personagem dá quatro passos e gira quatro vezes, usando repita 4.</p></div><div class="template-sequence"><span>2</span><p>Depois, entra em uma dança que alterna fantasias dentro do bloco sempre.</p></div><div class="template-sequence"><span>3</span><p>O bloco espere determina a velocidade da dança.</p></div><p class="small-muted">Você pode inventar outra coreografia. O importante é usar as estruturas de repetição.</p></div>
+        <div class="final-submit"><label>Nome da sua animação<input id="project2Title" type="text" placeholder="Ex.: A dança do robô"></label><label>Conte o que você criou<textarea id="project2Description" rows="3" placeholder="Meu personagem dança assim... Usei o bloco repita para... e o sempre para..."></textarea></label><a class="primary-button link-button" href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener">Abrir Scratch e criar meu projeto ↗</a><button class="primary-button" id="finishModule2">Concluir o Módulo 2</button><div class="feedback" id="finalFeedback2" aria-live="polite"></div></div>
+        <div class="certificate hidden" id="certificate2"><div class="certificate-stars">✦ ✧ ✦</div><span>CONQUISTA DESBLOQUEADA</span><h2>Mestre das repetições!</h2><p>Você concluiu o segundo módulo de Pequenos Programadores.</p><strong id="certificateName2">Pequeno Programador</strong><div class="certificate-bottom">MÓDULO 2 · MOVIMENTO, REPETIÇÃO E ANIMAÇÕES</div></div>
+      </section>
+
       <section class="view" id="view-responsavel">
         <div class="lesson-header color-dark"><span class="eyebrow">ÁREA DE ACOMPANHAMENTO</span><h1>Guia do responsável</h1><p>Orientações para acompanhar a aprendizagem sem tirar da criança a oportunidade de descobrir.</p></div>
         <div class="parent-grid"><div class="parent-card"><span class="parent-icon">🎯</span><h3>O que observar</h3><p>Se a criança compreende a sequência dos comandos, identifica os eventos e consegue explicar o que o programa faz.</p></div><div class="parent-card"><span class="parent-icon">🧭</span><h3>Como ajudar</h3><p>Faça perguntas em vez de resolver: “O que você esperava que acontecesse?” e “Qual bloco poderia fazer isso?”.</p></div><div class="parent-card"><span class="parent-icon">🧪</span><h3>Valorize os testes</h3><p>Errar, observar e corrigir faz parte da programação. Não avalie apenas se o projeto ficou bonito.</p></div></div>
         <div class="parent-section"><h2>Organização das duas aulas</h2><div class="schedule-row"><strong>Aula 1</strong><span>Algoritmos, ambiente Scratch, sequência, fala e movimento.</span><b>60 min</b></div><div class="schedule-row"><strong>Aula 2</strong><span>Atores, cenários, fantasias e eventos de clique.</span><b>60 min</b></div><div class="schedule-row"><strong>Projeto final</strong><span>Aplicação dos conceitos em uma criação própria.</span><b>30–45 min</b></div></div>
         <div class="parent-section"><h2>Conceitos trabalhados</h2><div class="concept-pills"><span>Algoritmo</span><span>Sequência</span><span>Evento</span><span>Ator / sprite</span><span>Palco</span><span>Fantasia</span><span>Script</span><span>Depuração</span></div></div>
         <div class="parent-section"><h2>Adaptação aos dispositivos</h2><p><b>Computador:</b> recomendado para arrastar os blocos com mouse e ter uma área de trabalho ampla.</p><p><b>Tablet:</b> usar preferencialmente na horizontal. Os blocos podem ser arrastados pelo toque. A atividade de clique no ator também funciona com toque na tela. Atividades que dependem de teclas do teclado serão introduzidas mais adiante, com alternativas.</p></div>
+        <div class="parent-section"><h2>Módulo 2 — conceitos trabalhados</h2><p><b>Laço de repetição:</b> estrutura que executa comandos mais de uma vez. O bloco “repita” tem quantidade definida; o bloco “sempre” continua até o programa ser interrompido.</p><p style="margin-top:8px"><b>Ritmo e temporização:</b> o bloco “espere” introduz uma pausa entre as ações e permite controlar a velocidade de uma animação.</p><p style="margin-top:8px"><b>Depuração:</b> a criança deve observar o comportamento, testar valores e identificar se os comandos estão dentro do bloco de repetição correto.</p></div>
+        <div class="parent-section"><h2>Organização do Módulo 2</h2><div class="schedule-row"><strong>Aula 3</strong><span>Laço repita, movimento repetido e caminho quadrado.</span><b>60 min</b></div><div class="schedule-row"><strong>Aula 4</strong><span>Laço sempre, troca de fantasias e controle do tempo.</span><b>60 min</b></div><div class="schedule-row"><strong>Projeto final</strong><span>Animação autoral com repetição e ritmo.</span><b>30–45 min</b></div></div>
         <div class="parent-section"><h2>Progresso registrado neste navegador</h2><p>O progresso é salvo automaticamente no dispositivo e navegador utilizados. Nesta versão inicial, ele não é sincronizado entre computador e tablet.</p><button class="secondary-button" id="resetProgress">Reiniciar progresso deste dispositivo</button><div class="feedback" id="resetFeedback" aria-live="polite"></div></div>
       </section>
 
-      <footer class="footer"><span>PEQUENOS PROGRAMADORES</span><span>Aprender criando · Módulo 1</span></footer>
+      <footer class="footer"><span>PEQUENOS PROGRAMADORES</span><span>Aprender criando · Módulos 1 e 2</span></footer>
     </main>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

@@ -1,44 +1,45 @@
-# Pequenos Programadores — Módulo 1
+# Pequenos Programadores — Curso Scratch
 
-Plataforma web estática, responsiva e sem dependências, preparada para publicação na Vercel.
+Plataforma educacional estática para acompanhar as primeiras aulas de programação com Scratch.
 
-## Arquivos
+## Conteúdo atual
 
-- `index.html` — estrutura e conteúdo do curso.
-- `styles.css` — identidade visual e adaptação para computador/tablet/celular.
-- `app.js` — navegação, quizzes, checklist, bloqueio progressivo e salvamento local.
-- `vercel.json` — configuração simples de publicação estática.
+- **Módulo 1 — Minha primeira programação**
+  - Aula 1: Conhecendo o mundo do Scratch
+  - Aula 2: Criando meu personagem animado
+  - Grande missão: Meu primeiro mundo no Scratch
+- **Módulo 2 — Movimento, repetição e animações**
+  - Aula 3: Faça o personagem repetir (`repita`)
+  - Aula 4: Animação sem parar (`sempre`, fantasias e `espere`)
+  - Projeto final: O personagem dançarino
 
-## Testar localmente
+## Recursos
 
-Basta abrir `index.html` no navegador. Para simular um servidor local, também é possível executar:
+- Navegação por aulas e etapas.
+- Atividades e perguntas com correção automática.
+- Liberação progressiva das aulas e projetos.
+- Registro do progresso no armazenamento local do navegador.
+- Painel de orientação para o responsável.
+- Layout responsivo para computador e tablet.
 
-```bash
-python3 -m http.server 8000
-```
+## Executar localmente
 
-Depois, acesse `http://localhost:8000`.
+Não há etapa de build. Abra `index.html` em um navegador ou utilize uma extensão de servidor local, como Live Server.
 
 ## Publicar na Vercel
 
-1. Crie um repositório no GitHub e envie os quatro arquivos deste projeto para a raiz do repositório.
-2. Na Vercel, selecione **Add New → Project** e importe esse repositório.
-3. Como é um site estático, não é necessário configurar framework nem comando de build.
-4. Mantenha a raiz do projeto como `./` e publique.
-5. A Vercel fornecerá um endereço `.vercel.app`.
+1. Envie a pasta do projeto para a raiz de um repositório GitHub.
+2. Na Vercel, importe o repositório.
+3. Selecione o framework **Other** (site estático).
+4. Deixe Build Command e Output Directory vazios; não há etapa de build.
+5. Faça o deploy.
 
-## Como funciona o progresso
+O arquivo `vercel.json` mantém a configuração simples de site estático.
 
-O nome, respostas e atividades concluídas são armazenados no `localStorage` do navegador. Isso significa que o progresso fica salvo no mesmo navegador e dispositivo. Nesta versão, os dados não são sincronizados entre computador e tablet e não existe login ou banco de dados.
+## Persistência e próxima etapa
 
-## Próximas evoluções possíveis
+Nesta versão, o progresso fica salvo no navegador/dispositivo, usando a mesma chave local da primeira versão para preservar o progresso anterior do Módulo 1. Ele ainda **não sincroniza** automaticamente entre computador e tablet. Para isso, a próxima evolução será integrar autenticação e banco de dados no Supabase, com acesso administrado pelo responsável.
 
-- Cadastro/perfil do aluno e sincronização entre dispositivos.
-- Painel do responsável com histórico de atividades.
-- Mais módulos do curso.
-- Atividades de programação incorporadas ou conectadas a projetos do Scratch.
-- Área de publicação de projetos e portfólio.
+## Segurança
 
-## Observação
-
-A plataforma é um ambiente de aprendizagem complementar. As atividades de programação acontecem no editor oficial do Scratch, aberto em uma nova aba.
+Não inclua chaves administrativas, senhas de banco ou tokens secretos em arquivos públicos do site.
